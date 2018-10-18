@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+int main() {
+  char s[10];
+  int x;
+  cout << "請輸入平行時空數和妙妙果汁代碼";
+  cin >> x >> s;
+  cout << "請輸入商店代碼";
+  
+  char y[x][100];
+  int u = 0;
+  for(int i = 0; i < x; i++){
+    cout << "\n";
+    cin >> y[i];
+  }for(int i = 0; i < x; i++){
+    for(int j = 0; j < "\n"; j++){
+      if(x[i][j] == s[0]){
+        if(x[i][j + 1] == s[1]){
+          if(x[i][j + 2] == s[2]){
+            if(x[i][j + 3] == s[3]){
+              if(x[i][j + 4] == s[4]){
+                if(x[i][j + 5] == s[5]){
+                  if(x[i][j + 6] == s[6]){
+                    if(x[i][j + 7] == s[7]){
+                      if(x[i][j + 8] == s[8]){
+                        if(x[i][j + 9] == s[9]){
+                          u +=1;
+                      }
+                    } 
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  cout << u;
+  return 0;
+}
+
